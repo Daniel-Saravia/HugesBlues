@@ -39,3 +39,37 @@ let errorMsg = classes("error");
 let successIcon = classes("success-icon");
 
 let failureIcon = classes("failure-icon");
+
+// This code sets up an event listener on form element for the submit event.
+// When the form is submitted, it calls the validateForm function.
+form.addEventListener("submit", (e) =>
+{
+  e.preventDefault();
+
+  // These next lines call the validateForm function with the username, email, and password parameters.
+  engine(username, 0, "Username cannot be blank");
+  engine(email, 1, "Email cannot be blank");
+  engine(password, 2, "Password cannot be blank");  
+});
+
+let engine = (id, serial, message) =>
+{
+    if(id.value.trim() === "")
+    {
+        errorMsg[serial].innerHTML = message;
+        id.style.border = "2px solid red";
+
+        // icons
+        failureIcon[serial].style.opacity = "1";
+        successIcon[serial].style.opacity = "0";
+    }
+    else
+    {
+        errorMsg[serial].innerHTML = "";
+        id.style.border = "2px solid green";
+
+        // icons
+        failureIcon[serial].style.opacity = "0";
+        successIcon[serial].style.opacity = "1"; 
+    }
+}
