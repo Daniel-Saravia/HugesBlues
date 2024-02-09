@@ -1,0 +1,84 @@
+/* Background Colors */
+.bg-color
+{
+    background: #0C5ADB;
+
+}
+
+/* ================================= */
+/*  Header Top Menu Area CSS         */
+/* ================================= */
+.header_top_menu
+{
+    height: 40px;
+
+}
+.header_top_menu_address_inner ul
+{
+    list-style: none;
+}
+.header_top_menu_address_inner ul li
+{
+    display: inline;
+
+}
+.header_top_menu_address_inner ul li a i
+{
+    font-size: 16px;
+    margin-right: 10px;
+    color: #fff;
+}
+.header_top_menu_address_inner ul li a
+{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 15px;
+}
+.header_top_menu_inner ul
+{
+    list-style: none;
+}
+.header_top_menu_icon_inner ul li
+{
+    display: inline-block;
+
+}
+.header_top_menu_inner ul li a
+{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 5px;
+}
+/*--------------------------*/
+/*NavBar Active Button*/
+.active
+{
+    text-decoration: underline;
+}
+.navbar-nar .nav-item.active .nav-link
+{
+    color: pink;
+}
+.navbar-nav .nav-item.active
+{
+    color: green;
+}
+
+/*--------------------------*/
+/*Hero*/
+.carousel .carousel-item
+{
+    height: 600px;
+
+}
+.item img
+{
+    /*Position - realative to the nearest ancestor being navbar */
+    /* object-fi specify how an img should be resized to fit it container*/
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 600px;
+}
